@@ -1,2 +1,2 @@
-FROM docker:latest
-RUN docker --help
+FROM archlinux:latest
+CMD ["echo"]
