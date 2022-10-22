@@ -1,5 +1,5 @@
 FROM archlinux:latest
-RUN pacman -Syu --noconfirm jre8-openjdk wget nodejs npm
+RUN pacman -Syu --noconfirm jre8-openjdk wget nodejs npm git
 WORKDIR /app
 COPY . .
 EXPOSE 8443
