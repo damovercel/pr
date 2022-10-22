@@ -3,6 +3,7 @@ RUN pacman -Syu --noconfirm jre8-openjdk wget nodejs npm
 WORKDIR /app
 COPY . .
 EXPOSE 8443
+EXPOSE 8080
 RUN npm install nodemon
 RUN git clone --branch=master https://github.com/sadra/EasyMTProto
 RUN cp ./config.json ./EasyMTProto/ -f
