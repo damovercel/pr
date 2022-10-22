@@ -10,4 +10,4 @@ RUN cp ./config.json ./EasyMTProto/ -f
 WORKDIR /app/EasyMTProto
 RUN npm install
 #RUN wget -c "https://github.com/tehcneko/ws.neko/releases/download/v1.1/ws.neko.jar"
-CMD ["nodemon", "emtproto.js"]
+CMD ["node", "emtproto.js"]
