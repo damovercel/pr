@@ -1,5 +1,5 @@
 FROM archlinux:latest
-RUN pacman -Syu --noconfirm git base-devel cmake make gcc
+RUN pacman -Syu --noconfirm git base-devel cmake make gcc makepkg
 RUN git clone https://aur.archlinux.org/snapd.git
 WORKDIR /snapd
 RUN makepkg -si
